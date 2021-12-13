@@ -1,0 +1,100 @@
+/* GENERAL STYLE  */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Contenitore delle cards  */
+.container {
+    display: flex;
+    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1170px) {
+    .container {
+        justify-content: flex-start;
+    }        
+}
+
+/* Stile delle cards */
+.card {
+    width: 360px;
+    height: 520px;
+    margin: 15px;
+    border-radius: 24px;
+    background-color: #A1A1A1;
+    background: linear-gradient(164.51deg, #A2A2A2 0.36%, #F2F2F2 90.25%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+    width: 100%;
+}
+
+/* Sezione dell'header  */
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px 9px 5px 10px;
+    background-color: white;
+}
+
+.name-date {
+    flex: 1;
+}
+
+.name-date > p:first-child {
+    font-size: 18px;
+}
+
+.name-date > p:last-child {
+    color: white;
+}
+
+.dot-container {
+    display: flex;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: black;
+    margin: 15px 2.5px;
+    border-radius: 50%;
+}
+
+.dot-container > div:last-child {
+    margin-right: 15px;
+}
+
+/* Sezione finale con description  */
+.description p {
+    padding: 0 10px;
+    text-align: justify;
+    line-height: 17px;
+}
+
+img[src$="heart.png"] {
+    height: 18px;
+    width: 20px;
+    margin: 25px 7.5px 12.9px 25px;
+}
+
+img[src$="comment.png"] {
+    height: 18px;
+    width: 18px;
+    margin: 25px 7.5px 13px 7.5px;
+}
+
+.description span {
+    font-weight: 700;
+}
